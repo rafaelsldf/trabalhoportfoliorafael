@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style> 
+
+        * { /* Formatação geral */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        body { /* Formatação do corpo */
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f0f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container { /* Formatação do container */
+            background-color: #fafafa;
+            border-radius: 10px;
+            width: 400px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .header { /* Formatação do título */
+            text-align: center;
+            font-size: 25px;
+            color: #007bff;
+            padding: 20px;
+        }
+
+        .form { /* Altura do fundo */
+            padding: 20px;
+
+        }
+
+        .form-control { /* Espaçamento dos campos */
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control label {  /* Formatação do label */
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .form-control input { /* Formatação do campo input */
+            border: 2px solid #f0f0f0f0;
+            display: block;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .button { /* Formatação do botão enviar */
+            border: none; outline: none;
+            border-radius: 10px;
+            margin-left: 38%;
+            background-color: #007bff;
+            font-size: 14px;
+            color: #fff;
+            width: 80px;
+            padding: 5px;
+            cursor: pointer;
+            transition: background-color 0.3 ease;
+        }
+
+        .button:hover { /* Cor hover para o botão enviar */
+            background-color: #0056b3;
+        }
+
+        .voltar img { /* Formatação e posicionamento do 'botão' voltar */
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 3%;
+            cursor: pointer;
+        }
+
+    </style> <!-- Fim do estilo -->
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h2>Contato</h2>
+        </div> <!-- Título Contato-->
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome."> 
+            </div> <!-- Campo nome-->
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite seu email."> 
+            </div> <!-- Campo email -->
+
+            <div class="form-control">
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="nome" placeholder="Digite sua mensagem."> 
+            </div> <!-- Campo mensagem-->
+
+            <div class="voltar">
+                <a href="index.html">
+                    <img src="Imagens/menu.png" alt="Voltar">
+                </a> <!-- Botão voltar -->
+            </div>
+            <button type="submit" class="button">Enviar</button> <!-- Botão enviar -->          
+    </div>
+
+</body>
+
+</html>

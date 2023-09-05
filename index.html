@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Rafael</title>
+
+    <style>
+        * { /* Formatação Geral */ 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {  /* Formatação do Corpo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: #f0f0f0;
+        }
+
+        .titulo { /* Formatação do Título*/
+            font-size: 92px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .titulo span { /* Cor Secundaria azul para o Título*/
+            color: #007bff;
+        }
+
+        .button { /* Formatação dos botões principais */
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #ffffff;
+            margin-inline: 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+
+        .button:hover {  /* Cor para hover dos botões principais */
+            background-color: #0056b3;
+        }
+
+        .contato {  /* Formatação do 'botão' de contato */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            margin-top: 25px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .contato:hover { /* Cor para hover do 'botão' de contato */
+            color: #29292a;
+        }
+
+        .contato img {   /* Formatação para o icone de contato */
+            width: 15px;
+            margin-right: 5px;
+            margin-top: 23px;
+        }
+        
+    </style> <!-- Fim do Estilo -->
+
+  </head>
+
+  <body>
+    <div>
+      <h1 class="titulo">Rafael Olivé<span>.</span></h1> <!-- Título -->
+
+      <div>
+        <a href="sobremim.html" target="_self" class="button">Sobre Mim</a>
+        <a href="formacao.html" target="_self" class="button">Minha Formação</a>
+        <a href="portfolio.html" target="_self" class="button">Meu Portfólio</a>
+      </div> <!-- Botões Principais -->
+
+      <div class="contato">
+        <img src="Imagens/telefone.png" alt="Ícone de Contato">
+        <a href="contato.html" target="_self" class="contato">Contato</a>
+      </div> <!-- Botão Contato-->
+
+    </div> <!-- Principal -->
+
+  </body> <!-- Corpo -->
+
+  </html>

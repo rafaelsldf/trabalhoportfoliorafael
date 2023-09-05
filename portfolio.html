@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body { /* Formatação do Corpo */
+            margin: 0;
+            padding-bottom: 100px;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header h1 { /* Posicionamento e formatação do título*/
+            padding-top: 15px;
+            align-items: center;
+            text-align: center;
+            font-size: 60px;
+            color: #007bff;
+        }
+
+          .trabalho1 h2 { /* Formatação e posicionamento do primeiro subtítulo */
+            padding-top: 20px;
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            color: #000000;
+        }
+
+        .trabalho1 img { /* Formatação e posicionamento da primeira imagem */
+          margin:auto;
+          display: block;
+          width: 70%;
+          border-radius: 40px;
+        }
+
+        .trabalho2 h2 {  /* Formatação e posicionamento do segundo subtítulo */
+            padding-top: 100px;
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            color: #000000;
+        }
+
+        .trabalho2 img { /* Formatação e posicionamento da segunda imagem */
+          margin:auto;
+          display: block;
+          width: 70%;
+          border-radius: 40px;
+        } 
+
+        .voltar img { /* Formatação e posicionamento do 'botão' voltar */
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            width: 45px;
+            cursor: pointer;
+        }
+
+        .contato img { /* Formatação e posicionamento do 'botão' contato */
+            position: absolute;
+            right: 30px;
+            top: 80px;
+            width: 45px;
+            cursor: pointer;
+        }
+
+        ::-webkit-scrollbar{ /* Customização do fundo da barra de rolagem */
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb { /* Estilização da barra de rolagem */
+            background-color: #c9c9c9;
+            border-radius: 20px;
+            border: 4px solid transparent;
+            background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover { /* Função hover da barra de rolagem */
+            background-color: #8b8b8b;
+        }
+
+    </style> <!-- Fim do estilo -->
+   
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <h1>Meu Portfólio</h1>
+        </div> <!-- Título principal -->
+
+        <div class="trabalho1">
+          <h2>Cofre que soma e converte diferentes tipos de moedas feito em Java.</h2>
+          <img src="Imagens/trabalhocofre.gif" alt="Trabalho Cofre">
+        </div> <!-- Texto e imagem do primeiro segmento -->
+
+        <div class="trabalho2">
+          <h2>Implementação e consulta de um pequeno banco de dados utilizando MySQL.</h2>
+          <img src="Imagens/trabalhobd.gif" alt="Trabalho BD">
+        </div> <!-- Texto e imagem do segundo segmento -->
+
+        <div class="voltar">
+            <a href="index.html">
+                <img src="Imagens/menu.png" alt="Voltar">
+            </a> <!-- Botão voltar -->
+            <div class="contato"> 
+                <a href="contato.html">
+                    <img src="Imagens/telefoneazul.png" alt="Contato">
+                </a>
+            </div> <!-- Botão contato -->
+        </div>
+    </div>
+</body>
+
+</html>
